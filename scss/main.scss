@@ -14,18 +14,30 @@ body{
     background-color: $color-1;
 }
 
-.nav ul li{
+.nav {
+    background-color: $color-1;
+    ul li{
     list-style: none;
+}
+    a{
+        text-decoration: none;
+        &:hover{
+            color: $color-2;
+        }
+    }
+}
+
+@mixin headings($fontSize){
+    font-size:$fontSize;
+    color: $color-2;
+    text-align: center;
 }
 
 .banner h1{
-    font-size: $font-lg;
-    color: $color-2;
-    text-align: center;
+    @include headings($font-lg);
 }
 
 .footer h3{
-    font-size: $font-md;
-    color: $color-2;
-    text-align: center;
+    @include headings($font-md);
 }
+

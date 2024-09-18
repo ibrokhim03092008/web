@@ -6,8 +6,17 @@ body {
   background-color: orange;
 }
 
+.nav {
+  background-color: orange;
+}
 .nav ul li {
   list-style: none;
+}
+.nav a {
+  text-decoration: none;
+}
+.nav a:hover {
+  color: gray;
 }
 
 .banner h1 {
