@@ -6,6 +6,10 @@ body {
   background-color: orange;
 }
 
+.nav ul li {
+  list-style: none;
+}
+
 .banner h1 {
   font-size: 40px;
   color: gray;
